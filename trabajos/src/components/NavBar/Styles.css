@@ -1,0 +1,41 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    
+    padding: 0;
+    overflow: hidden;
+    border: 3px solid #e7e7e7;
+    border-bottom: none;
+    background-color: #f3f3f3;
+}
+h1{
+    margin: 10px;
+    margin-left: 17px;
+    color: cornflowerblue;
+}
+
+li {
+    float: left;
+    
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ddd;
+}
+
+.Barra{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    border: 3px solid #e7e7e7;
+}
