@@ -1,0 +1,9 @@
+.addCart{
+    display: flex;
+    flex-direction: column;
+    height: 3px;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
