@@ -1,0 +1,21 @@
+.CardsItems{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 4px;
+    max-width: 150px;
+    margin: 20px;
+}
+h3{
+    max-width: max-content;
+    margin: auto;
+    text-align: center;
+    border: 1px solid rgb(116, 116, 116);
+
+}
+img{
+    height: 80px;
+    width: 80px;
+}
