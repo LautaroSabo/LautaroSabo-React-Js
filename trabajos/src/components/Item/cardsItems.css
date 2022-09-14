@@ -1,21 +1,37 @@
+
 .CardsItems{
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 30px;
+    height: 650px;
+    
     align-items: center;
-    border: 1px solid rgb(116, 116, 116);
-    border-radius: 4px;
-    max-width: 150px;
-    margin: 20px;
+    background-color: #5dc1b9;
+    border-radius: 20px;
+    flex-direction: column;
 }
-h3{
-    max-width: max-content;
-    margin: auto;
+.title{
+    padding: 0 20px;
+    margin-bottom: 20px;
     text-align: center;
-    border: 1px solid rgb(116, 116, 116);
-
 }
+
+.description{
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.price{
+    text-align: center;
+    padding: 10px;
+}
+
+.id{
+    padding: 5px;
+}
+
 img{
-    height: 80px;
-    width: 80px;
+    height: 110px;
+    width: 150px;
 }

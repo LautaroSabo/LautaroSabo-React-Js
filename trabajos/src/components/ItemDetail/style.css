@@ -1,0 +1,25 @@
+
+
+.itemDetail{
+    margin: 50px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #dcdcdc;
+    border-radius: 15px;
+}
+
+.imgDetail{
+    height: 600px;
+    padding: 20px 0;
+}
+
+.textDetail{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    width:  30%;
+    padding: 20px 0;
+}

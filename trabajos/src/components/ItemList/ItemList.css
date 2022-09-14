@@ -1,8 +1,10 @@
 
 .CardContainer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
     
 }
