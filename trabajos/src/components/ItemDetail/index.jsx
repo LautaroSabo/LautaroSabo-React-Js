@@ -4,7 +4,7 @@ import ItemCount from '../ItemCount'
 import "./style.css"
 
 const ItemDetail =  ({product}) =>  {
-  console.log("product")
+  // console.log("product")
   return (
     <div className='itemDetail'>
       

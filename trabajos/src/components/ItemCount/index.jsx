@@ -30,11 +30,11 @@ const ItemCount = ({stock, initial, onAdd}) => {
     }
 
     useEffect(()=> {
-        console.log("Se montó el ItemCount");
+        // console.log("Se montó el ItemCount");
     }, []);
 
     useEffect(()=> {
-        console.log("Se actualiza el estado!")
+        // console.log("Se actualiza el estado!")
     }, [count]);
 
     return (

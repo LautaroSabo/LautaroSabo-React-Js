@@ -12,6 +12,7 @@
 .imgDetail{
     height: 600px;
     padding: 20px 0;
+    width: auto;
 }
 
 .textDetail{

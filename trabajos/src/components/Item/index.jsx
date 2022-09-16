@@ -1,22 +1,24 @@
 import React from 'react'
 import './cardsItems.css'
-import ItemCount from '../../components/ItemCount';
+import {useNavigate } from 'react-router-dom';
 
 
 const Item = ({ product }) => {
-    const agregarAlCarrito = (cantidad) => {
-        console.log(`se agrego la ${cantidad} al carrito`)
+    const navigate = useNavigate();
+    const handleNavigate = () => {
+        navigate(`/detail/${product.id}`)
     }
     return (
-    
-    
-        <div className='CardsItems'>
-        <h1 className='title'>{product.title}</h1>
-        <img src={product.image} alt="imagenesProdctos" />
-        <h3 className='description'>{product.description}</h3>
+        <div className='CardsItems' onClick={handleNavigate}>
+        <div className='headTitulo'><h1 className='title'>{product.title}</h1></div>
+        <div className='itemImg'><img className='imgItem' src={product.image} alt="imagenesProdctos" /></div>
+        <div className='footerItem'>
         <h3 className='price'> ${product.price}</h3>
-        <h3 className='id'>Id: {product.id}</h3>
-        <ItemCount initial={1} stock={7} onAdd={agregarAlCarrito} />
+        <h3 className='DetailItem'>Detalles Producto</h3>
+        </div>
+        
+
+        
         </div>
     )
 }

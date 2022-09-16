@@ -1,20 +1,26 @@
 
 .CardsItems{
-    display: flex;
     flex-wrap: wrap;
     width: 400px;
     margin: 30px;
     height: 650px;
-    
+    display: block;
     align-items: center;
     background-color: #5dc1b9;
     border-radius: 20px;
     flex-direction: column;
 }
+.headTitulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 2px solid rgba(149, 147, 147, 0.363);
+}
 .title{
     padding: 0 20px;
     margin-bottom: 20px;
     text-align: center;
+    font-size: 29px;
 }
 
 .description{
@@ -25,13 +31,36 @@
 .price{
     text-align: center;
     padding: 10px;
+    margin: 30px;
 }
 
 .id{
     padding: 5px;
 }
 
-img{
-    height: 110px;
-    width: 150px;
+.itemImg{   
+    display: flex;
+    justify-content:center;
+    width: auto;
+    
+}
+
+.imgItem{
+    padding: 10px;
+    height: 300px;
+    width: 250px;
+}
+.footerItem{
+    border-top: 2px solid rgba(149, 147, 147, 0.363);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.DetailItem{
+    margin: auto;
+    border: 10px solid #a0fb0e;
+    border-radius: 8px;
 }
