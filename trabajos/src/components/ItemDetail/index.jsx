@@ -1,12 +1,15 @@
 
-import React from 'react'
+import React, { useContext } from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Shop } from '../../context/ShopProvider'
 import ItemCount from '../ItemCount'
 import "./style.css"
 
 const ItemDetail =  ({product}) =>  {
   // console.log("product")
+
+  const {addItem} = useContext(Shop)
 
   const [cant, setCant] = useState(0);
   const navigate = useNavigate();
@@ -15,13 +18,16 @@ const ItemDetail =  ({product}) =>  {
     setCant(cantidad);
 
   }
-  console.log(cant);
+  // console.log(cant);
 
   const handleFinish = () =>{
+    const productToSave = {...product,setCant:cant}
+    addItem(productToSave)
     navigate('/cart')
   }
   return (
     <div className='itemDetail'>
+
       
       <img className='imgDetail' src={product.image} alt='Product-Detail'/>
         <div className='textDetail'>
@@ -45,18 +51,3 @@ export default ItemDetail
 
 
 
-// const ItemDetail =  ({product}) =>  {
-//   console.log("product")
-//   return (
-//     <div className='itemDetaill'>
-      
-//         <h1>{product.title}</h1> 
-//             <img src={product.image} alt='Product-Detail'/>
-//         <h4>{product.description}</h4> 
-        
-//         <ItemCount/>
-//     </div>
-    
-//   )
-  
-// }

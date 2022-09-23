@@ -1,9 +1,14 @@
-import React from 'react'
+
 import CardWidget from '../CardWidget'
 import './Styles.css'
 import { Link } from 'react-router-dom'
 
+
 const Navbar = () => {
+
+    
+
+
     return (
         <div className='Barra'>
             <CardWidget/>
@@ -23,6 +28,9 @@ const Navbar = () => {
             <li>
                 <Link to="/category/jewelery">Jewelery</Link>
             </li>
+            <CardWidget>
+                {/* <span>{value.mensaje}</span> */}
+            </CardWidget>
             
         </div>
     )

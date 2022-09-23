@@ -1,8 +1,12 @@
 import React from 'react'
+import ShopProvider from '../../context/ShopProvider'
 
 const Cart = () => {
   return (
-    <div>cart</div>
+    <div>
+
+      <ShopProvider/>
+    </div>
   )
 }
 
